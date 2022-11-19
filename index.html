@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sam Razumnyi">
+    <title>СиСофт Казань Разработка</title>
+    <meta name="description" content="Разработа и внедрение систем для строительства и проектирования. 
+        Консалтинг в области BIM-технологий">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width:680px)" href="./styles/mobile.min.css" />
+    <link rel="stylesheet" href="styles/itc-slider.min.css">
+</head>
+
+<body>
+    <div class="arrow" hidden="true" id="arrow" name="image-wrapper" onclick="scrollUp()">
+        <img src="../images/arrow.png" style="display: inline;" width="50px" height="50px">
+        <img src="../images/arrow-fill.png" style="display: none;" width="50px" height="50px">
+    </div>
+
+    <div id="toast" class="toast hidden">
+        <span id="toast-message"></span>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu"></div>
+    <div class="header" id="header">
+        <div class="container">
+            <div class="logo-wrapper">
+                <img class="logo" src="../images/logo.png" width="50" height="50" alt="logo">
+                <div class="logo-tagline">
+                    <h2>СиСофт Казань Разработка</h3>
+                        <h4>Разработа. Консалтинг. Внедрение.</h6>
+                </div>
+                <button class="header-open-menu-button" onclick="openMenu()">
+                    <img src="./images/sidebar.png" alt="sidebar" width="40px" height="40px">
+                </button>
+            </div>
+
+            <div id="headerContacts" class="header-contacts header-contacts-display">
+                <div class="header-link"><a href="tel:88435705463" class="header_phone">+7(843)570-54-63</a></div>
+                <div><a href="#form" class="header-link" style="color:#4979f2">Заказать звонок</a></div>
+            </div>
+
+            <div id="headerLinks" class="header-links header-links-display">
+                <ul class="header-list">
+                    <li><a href="#firstview" class="header-link mobile-button">Наши решения</a></li>
+                    <li><a href="#advantage" class="header-link mobile-button">Почему мы?</a></li>
+                    <li><a href="#clients" class="header-link mobile-button">С нами работают</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="firstview" id="firstview">
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="container">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <div class="slider__item_content">
+                                <h1>КОСМОС</h1>
+                                <h3>КОмплексная Система Мониторинга Объекта Строительства</h3>
+                                <h4>для цифровизации строительной отрасли на базе платформы TDMS</h4>
+                                <a href="https://youtu.be/vbPiiV7z6Ds" class="firstview-button"
+                                    target="_blank">Видеопрезентация</a>
+                            </div>
+                        </div>
+
+                        <div class="slider__item">
+                            <div class="slider__item_content">
+                                <h1>СУПРИДА</h1>
+                                <h3>Система Управления ПРоектными и Инженерными ДАнными</h3>
+                                <h4>для создания единого информационного пространства</h4>
+                                <a href="https://youtu.be/HECT-aoYrMs" class="firstview-button"
+                                    target="_blank">Видеопрезентация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider__control" data-slide="prev"></button>
+            <button class="slider__control" data-slide="next"></button>
+        </div>
+    </div>
+
+    <div class="advantage" id="advantage" style="height: auto;">
+        <div class="container">
+            <h2 class="caption">Преимущества</h2>
+            <div class="advantage-items-wrapper">
+                <div class="advantage-item" name="image-wrapper">
+                    <img src="../images/shield-check.png" style="display: inline;" alt="pic">
+                    <img src="../images/shield-fill-check.png" style="display: none;" alt="pic">
+                    <p>100% российских технологий</p>
+                </div>
+                <div class="advantage-item" name="image-wrapper">
+                    <img src="../images/calculator.png" style="display: inline;" alt="pic">
+                    <img src="../images/calculator-fill.png" style="display: none;" alt="pic">
+                    <p>Трансформация бизнес-процессов</p>
+                </div>
+                <div class="advantage-item" name="image-wrapper">
+                    <img src="../images/graph-down.png" style="display: inline;" alt="pic">
+                    <img src="../images/graph-up.png" style="display: none;" alt="pic">
+                    <p>Новый подход к созданию систем управления проектами</p>
+                </div>
+                <div class="advantage-item" name="image-wrapper">
+                    <img src="../images/trophy.png" style="display: inline;" alt="pic">
+                    <img src="../images/trophy-fill.png" style="display: none;" alt="pic">
+                    <p>Гарантированный результат за счет профессиональных компетенций</p>
+                </div>
+                <div class="advantage-item" name="image-wrapper">
+                    <img src="../images/qr-code.png" style="display: inline;" alt="pic">
+                    <img src="../images/qr-code-scan.png" style="display: none;" alt="pic">
+                    <p>Индивидуальное обследование каждого заказчика</p>
+                </div>
+                <div class="advantage-item" name="image-wrapper">
+                    <img src="../images/send-plus.png" style="display: inline;" alt="pic">
+                    <img src="../images/send-plus-fill.png" style="display: none;" alt="pic">
+                    <p>Оперативная техподдержка</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clients" class="clients">
+        <div class="container">
+
+            <h2 class="caption clients_caption">С нами работают</h2>
+
+            <div class="clients-items-wrapper">
+                <div class="client_item">
+                    <img src="../images/gazprom.png" alt="gazprom" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/transneft.png" alt="transneft" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/rosatom.png" alt="rosatom" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/akbars.png" alt="akbars" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/brio.png" alt="brio" width="90px" height="100px">
+                </div>
+            </div>
+
+            <div class="slider mobile_slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items slider__items_client">
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/gazprom.png" alt="gazprom" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/transneft.png" alt="transneft" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/rosatom.png" alt="rosatom" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/akbars.png" alt="akbars" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/brio.png" alt="brio" width="90px" height="100px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form" id="form">
+        <div class="container">
+            <h2 class="caption">Форма обратной связи</h2>
+            <form novalidate>
+                <input class="form-input" id="form-name" type="text" placeholder="Имя">
+                <input class="form-input" id="form-phone" type="text" placeholder="Телефон">
+                <button id="sendFormButton" class="form-button">Отправить</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        © 2022 СиСофт Казань Разработа
+    </div>
+</body>
+<script src="./scripts/script.min.js"></script>
+<script src="./scripts/itc-slider.min.js"></script>
+
+</html>
