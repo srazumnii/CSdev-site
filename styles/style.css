@@ -210,6 +210,10 @@ ul.header-list li {
     overflow-y: scroll;
 }
 
+.text_container p {
+    margin-bottom: 0.5em;
+}
+
 .text_caption_style {
     font-family: Arial, Helvetica, sans-serif;
     margin: 1em;
@@ -235,6 +239,7 @@ ul.header-list li {
 
 .table_price td:last-child {
     text-align: center;
+    min-width: 100px;
 }
 
 .slider__item_content {

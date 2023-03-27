@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sam Razumnyi">
+    <title>СиСофт Казань Разработка</title>
+    <meta name="description"
+        content="Разработа и внедрение систем для строительства и проектирования. Консалтинг в области BIM-технологий">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width:680px)" href="./styles/mobile.min.css" />
+    <link rel="stylesheet" href="styles/itc-slider.min.css">
+</head>
+
+<body>
+    <div class="arrow" hidden="true" id="arrow" name="image-wrapper" onclick="scrollUp()">
+        <img src="../images/arrow-min.svg" style="display: inline;" width="50px" height="50px">
+        <img src="../images/arrow-fill.png" style="display: none;" width="50px" height="50px">
+    </div>
+
+    <div id="toast" class="toast hidden">
+        <span id="toast-message"></span>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu"></div>
+    <div class="header" id="header">
+        <div class="container">
+            <a href="index.html">
+                <div class="logo-wrapper">
+
+                    <img class="logo" src="../images/logo.png" width="50" height="50" alt="logo">
+
+                    <div class="logo-tagline">
+                        <h3>
+                            СиСофт Казань Разработка
+                            <br>
+                            Разработа. Консалтинг. Внедрение.
+                        </h3>
+                    </div>
+                    <button class="header-open-menu-button" onclick="openMenu()">
+                        <img src="./images/sidebar.png" alt="sidebar" width="40px" height="40px">
+                    </button>
+                </div>
+            </a>
+            <div id="headerContacts" class="header-contacts header-contacts-display">
+                <div class="header-link"><a href="tel:88435705463" class="header_phone">+7(843)570-54-63</a></div>
+                <div><a href="#form" class="header-link" style="color:#4979f2">Заказать звонок</a></div>
+            </div>
+
+            <div id="headerLinks" class="header-links header-links-display">
+                <ul class="header-list">
+                    <li><a href="#firstview" class="header-link mobile-button">Видеопрезентация</a></li>
+                    <li><a href="#advantage" class="header-link mobile-button">Функционал</a></li>
+                    <li><a href="#clients" class="header-link mobile-button">С нами работают</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="firstview" id="firstview">
+        <div class="container">
+            <div class="slider__item_content">
+                <h1>TIM</h1>
+                <h3>Технологии информационного моделирования</h3>
+                <h4>IT-решения для разработки TIM-проектов</h4>
+            </div>
+
+            <div class="container">
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/DSmZ6b1VN4s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="advantage" id="advantage" style="height: auto;">
+        <div class="container">
+            <div class="text_container">
+                <h3 class="text_caption_style">Внедрение ТИМ</h3>
+                <p class="text_style">Если вы хотите повысить эффективность своей организации за счет значительного
+                    сокращения количества ошибок и улучшения коммуникаций между участниками рабочего процесса, то
+                    переход на технологию информационного моделирования (ТИМ) - это как раз то, что нужно!
+                </p>
+
+                <h3 class="text_caption_style">План перехода на ТИМ</h3>
+
+                <p class="text_style">
+                    Мы предлагаем вместе пройти следующие шаги по переходу на новую технологию на базе ПО для
+                    информационного моделирования:
+                </p>
+
+                <p class="text_style">
+                    1. Анализ существующей инфраструктуры организации с последующей разработкой индивидуального плана
+                    внедрения ТИМ.
+                </p>
+
+                <p class="text_style">
+                    Хорошая подготовка позволяет исключить ненужные действия, сокращает сроки внедрения и позволяет
+                    спланировать бюджет.
+                </p>
+
+                <p class="text_style">
+                    2. Подготовка аппаратного обеспечения.
+                </p>
+
+                <p class="text_style">
+                    3. Формирование пилотной группы из ведущих специалистов по разделам архитектура, конструкции и
+                    инженерные сети.
+                </p>
+
+                <p class="text_style">
+                    Не надо переводить на ТИМ всех сотрудников сразу. При внедрении новой технологии производительность
+                    труда падает, потому, переход на новое ПО должен быть плавным.
+
+                    Для формирования пилотной группы нам необходим BIM-менеджер, BIM-координатор. Как правило в пилотную
+                    группу входят более предрасположенные к информационному моделированию сотрудники, остальные
+                    продолжают работать в CAD. На этапе пилотного проекта группа CAD поддерживает производительность
+                    пилотной группы, до момента ее включения в деятельность компании. В дальнейшем все сотрудники могут
+                    постепенно перейти на ТИМ.
+                </p>
+
+                <p class="text_style">
+                    4. Получение базовых навыков работы в программных продуктах для информационного моделирования и
+                    координации.
+                </p>
+
+                <p class="text_style">
+                    При внедрении новой технологии всегда требуется централизованная переподготовка сотрудников. Курсы
+                    для сотрудников в работе с новым ПО проводятся в нашем учебном классе или на территории заказчика
+                    (при его достаточной оснащенности). Главное помнить, что программный продукт без обучения
+                    бесполезен.
+                </p>
+
+                <p class="text_style">
+                    5. Приобретение необходимого ПО для информационного моделирования.
+                </p>
+                <p class="text_style">
+                    Основные причины необходимости использования лицензионного программного обеспечения:
+                </p>
+                <ul>
+                    <li>юридическая ответственность;</li>
+                    <li>технологические риски, связанные с нестабильностью работы контрафактных программ, отсутствием
+                        обновлений, технической поддержки;</li>
+                    <li>неиспользование договорных обязательств после проверок в связи с возможным изъятием компьютеров.
+                    </li>
+                </ul>
+
+                <p class="text_style">
+                    6. Пилотный проект при участии специалистов СиСофт Казань Разработка.
+                </p>
+
+                <p class="text_style">
+                    Без пилотного проекта внедрение ТИМ обречено на очень большие трудности. Для запуска полного цикла
+                    проектирования требуется не только покупка ПО и прохождение базового курса освоения ПО, но еще и
+                    изменение организационной структуры коллектива, настройка и адаптация аппаратного и программного
+                    обеспечения, внедрение новых регламентов работы. Самый короткий путь для решения этих задач - это
+                    выполнение пилотных проектов.
+                    В ходе пилотного проекта команда применяет навыки, полученные во время курса освоения - от
+                    построения осей до получения рабочей документации. На этой стадии необходим опытный консультант, так
+                    снижается вероятность ошибок в новом проекте и отката к привычной технике работы.
+                </p>
+
+                <p class="text_style">
+                    7. Техническая поддержка при выполнении последующих проектов инструментами для информационного
+                    моделирования.
+                </p>
+
+                <p class="text_style">
+                    Способ экономии времени сотрудников, чтобы они проектировали, а не искали ответы на вопрос "как это
+                    сделать". На первоначальном этапе работы, проектировщики, разыскивая ответ на вопрос в интернете или
+                    решая его "методом проб и ошибок" могут потратить до 30% рабочего времени. Посчитайте, сколько стоит
+                    это время?
+                </p>
+
+                <h3>Стоимость работ и услуг</h3>
+                <p class="text_style">
+                    Предлагаем ознакомиться с составом работ и услуг по освоению и внедрению ТИМ в вашей организации:
+                </p>
+
+                <table class="table_price">
+                    <tr>
+                        <th colspan="3">Курсы освоения ТИМ инструментов</th>
+                    </tr>
+                    <tr>
+                        <td>Курс освоения ПО для архитектурного моделирования</td>
+                        <td>40 ак. часов</td>
+                        <td>150 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Курс освоения ПО для моделирования конструкций зданий и сооружений</td>
+                        <td>48 ак. часов</td>
+                        <td>180 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Курс освоения ПО для моделирования инженерных систем</td>
+                        <td>40 ак. часов</td>
+                        <td>150 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Курс освоения ПО для инженерных изысканий</td>
+                        <td>40 ак. часов</td>
+                        <td>150 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Курс освоения ПО для моделирования вертикальной планировки</td>
+                        <td>40 ак. часов</td>
+                        <td>150 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Курс освоения ПО для моделирования автомобильных дорог и наружных сетей</td>
+                        <td>40 ак. часов</td>
+                        <td>150 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Курс освоения ПО для создания среды общих данных и координации проектов</td>
+                        <td>24 ак. часа</td>
+                        <td>80 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Внедрение ТИМ</th>
+                    </tr>
+                    <tr>
+                        <td>Выполнение пилотного проекта с группой специалистов Заказчика. Имеется зависимость от
+                            количества специалистов в проекте, размера объекта проектирования и его отраслевой специфики
+                            (гражданское или промышленное проектирование, инфраструктура, нефтехимия)
+                        </td>
+                        <td colspan="2">
+                            от 1,2 млн. руб. за проект
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Техническое сопровождение ТИМ</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Консультации экспертов в области ТИМ по всем направлениям информационного моделирования в
+                            виде очного и/или удалённого взаимодействия с представителями Заказчика
+                        </td>
+                        <td colspan="2">
+                            3 500 руб. за 1 час консультаций
+                        </td>
+                    </tr>
+                </table>
+
+                <h5 style="font-style: italic;">* все цены указаны без НДС (применяется УСН)</h5>
+
+                <p class="text_style">
+                    Задавайте вопросы нам и мы найдем оптимальное решение!
+                    <br><br>
+                    Результат внедрения - уверенное выполнение участниками пилотной группы ТИМ проектов и дальнейшее
+                    распространение новой технологии в компании. Это позволит соответствовать тенденциям рынка в
+                    строительной индустрии.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="clients" class="clients">
+        <div class="container">
+
+            <h2 class="caption clients_caption">С нами работают</h2>
+
+            <div class="clients-items-wrapper">
+                <div class="client_item">
+                    <img src="../images/gazprom.png" alt="gazprom" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/transneft.png" alt="transneft" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/rosatom.png" alt="rosatom" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/akbars.png" alt="akbars" width="100px" height="100px">
+                </div>
+                <div class="client_item">
+                    <img src="../images/brio.png" alt="brio" width="90px" height="100px">
+                </div>
+            </div>
+
+            <div class="slider mobile_slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items slider__items_client">
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/gazprom.png" alt="gazprom" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/transneft.png" alt="transneft" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/rosatom.png" alt="rosatom" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/akbars.png" alt="akbars" width="100px" height="100px">
+                            </div>
+                        </div>
+
+                        <div class="slider__item slider__item_client">
+                            <div class="client_item_mobile">
+                                <img src="../images/brio.png" alt="brio" width="90px" height="100px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form" id="form">
+        <div class="container">
+            <h2 class="caption">Заказать обратный звонок</h2>
+            <form novalidate>
+                <input id="form_name" class="form-input" type="text" placeholder="Имя">
+                <input id="form_phone" class="form-input" type="text" placeholder="Телефон">
+                <button id="sendFormButton" class="form-button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2023 СиСофт Казань Разработка
+    </div>
+</body>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/itc-slider.min.js"></script>
+
+</html>
