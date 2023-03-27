@@ -28,18 +28,20 @@
     <div id="mobileMenu" class="mobile-menu"></div>
     <div class="header" id="header">
         <div class="container">
-            <div class="logo-wrapper">
-                <a href="index.html">
+            <a href="index.html">
+                <div class="logo-wrapper">
+
                     <img class="logo" src="../images/logo.png" width="50" height="50" alt="logo">
-                </a>
-                <div class="logo-tagline">
-                    <h2>СиСофт Казань Разработка</h3>
-                    <h4>Разработа. Консалтинг. Внедрение.</h6>
+
+                    <div class="logo-tagline">
+                        <h2>СиСофт Казань Разработка</h3>
+                            <h4>Разработа. Консалтинг. Внедрение.</h4>
+                    </div>
+                    <button class="header-open-menu-button" onclick="openMenu()">
+                        <img src="./images/sidebar.png" alt="sidebar" width="40px" height="40px">
+                    </button>
                 </div>
-                <button class="header-open-menu-button" onclick="openMenu()">
-                    <img src="./images/sidebar-min.svg" alt="sidebar" width="40px" height="40px">
-                </button>
-            </div>
+            </a>
 
             <div id="headerContacts" class="header-contacts header-contacts-display">
                 <div class="header-link"><a href="tel:88435705463" class="header_phone">+7(843)570-54-63</a></div>
@@ -205,10 +207,10 @@
 
     <div class="form" id="form">
         <div class="container">
-            <h2 class="caption">Форма обратной связи</h2>
+            <h2 class="caption">Заказать обратный звонок</h2>
             <form novalidate>
-                <input class="form-input" id="form-name" type="text" placeholder="Имя">
-                <input class="form-input" id="form-phone" type="text" placeholder="Телефон">
+                <input id="form_name" class="form-input" type="text" placeholder="Имя">
+                <input id="form_phone" class="form-input" type="text" placeholder="Телефон">
                 <button id="sendFormButton" class="form-button">Отправить</button>
             </form>
         </div>
@@ -218,7 +220,8 @@
         © 2023 СиСофт Казань Разработка
     </div>
 </body>
-<script src="./scripts/script.min.js"></script>
+<script src="./scripts/script.js"></script>
+<!-- <script src="./scripts/script.min.js"></script> -->
 <script src="./scripts/itc-slider.min.js"></script>
 
 </html>
