@@ -373,7 +373,7 @@ a.firstview-button {
     display: flex;
     justify-content: center;
     height: auto;
-    padding: 3em;
+    padding-bottom: 2em;
     padding-left: 30%;
     padding-right: 30%;
     background-color: whitesmoke;
